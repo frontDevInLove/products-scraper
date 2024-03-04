@@ -1,0 +1,22 @@
+{
+  "name": "my-web-scraper",
+  "module": "index.ts",
+  "type": "module",
+  "scripts": {
+    "dev": "bun --watch src/index.ts",
+    "build": "bun build src/index.ts --out-dir=build",
+    "server": "bun start build/index.js"
+  },
+  "devDependencies": {
+    "@types/puppeteer": "^7.0.4",
+    "bun-types": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.12",
+    "puppeteer": "^22.3.0",
+    "translate": "^2.0.2"
+  }
+}
